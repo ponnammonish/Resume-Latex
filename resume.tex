@@ -1,0 +1,155 @@
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+%  The MIT License (MIT)
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+
+\documentclass[a4paper,12pt]{article}
+
+%----------------------------------------------------------------------------------------
+%  PACKAGES
+%----------------------------------------------------------------------------------------
+\usepackage{url}
+\usepackage{parskip}    
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+\usepackage{supertabular}
+\usepackage{titlesec}             
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage[unicode, draft=false]{hyperref}
+\usepackage{fontawesome5}
+
+%----------------------------------------------------------------------------------------
+%  FORMATTING
+%----------------------------------------------------------------------------------------
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{10pt}
+
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+
+\definecolor{githubblack}{RGB}{36,41,46}      
+\definecolor{linkedinblue}{RGB}{0,119,181}   
+\definecolor{gmailred}{RGB}{219,68,55}       
+\definecolor{phonegreen}{RGB}{34,139,34}     
+\definecolor{mapblack}{RGB}{36,41,46}        
+
+%----------------------------------------------------------------------------------------
+%  JOB ENVIRONMENTS
+%----------------------------------------------------------------------------------------
+\newenvironment{jobshort}[2]
+{
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \end{tabularx}
+}
+{}
+
+\newenvironment{joblong}[2]
+{
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \end{tabularx}
+    \begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+}
+{
+    \end{itemize}
+    \end{minipage}    
+}
+
+%----------------------------------------------------------------------------------------
+%  BEGIN DOCUMENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+\pagestyle{empty} 
+
+%----------------------------------------------------------------------------------------
+%  TITLE
+%----------------------------------------------------------------------------------------
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{Monish Ponnam} \\[3pt]
+\raisebox{-0.05\height}{\textcolor{mapblack}{\faMapMarker}} Hyderabad, India \\[7.5pt]
+\href{https://github.com/ponnammonish}{\textcolor{githubblack}{\raisebox{-0.05\height}{\faGithub} GitHub}} \ $|$ \ 
+\href{https://www.linkedin.com/in/ponnam-monish-5a11b9360/}{\textcolor{linkedinblue}{\raisebox{-0.05\height}{\faLinkedin} LinkedIn}} \ $|$ \ 
+\href{mailto:ponnammonish79@gmail.com}{\textcolor{gmailred}{\raisebox{-0.05\height}{\faEnvelope} ponnammonish79@gmail.com}} \ $|$ \ 
+\textcolor{mapblack}{\raisebox{-0.05\height}{\faMobile}} \textcolor{phonegreen}{+91 7671084121} \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%  PROFESSIONAL SUMMARY
+%----------------------------------------------------------------------------------------
+\section{Professional Summary}
+Computer Science undergraduate specializing in Data Science, with experience in SQL, Python, Excel, and Power BI for data analytics. Actively exploring AI-powered full-stack development while gaining practical experience with Git and GitHub for version control. Currently learning the fundamentals of Oracle Cloud Infrastructure (OCI). Passionate about programming, data analytics, AI-driven development, and hands-on projects involving Arduino, IoT fundamentals, and sensor integration. Continuously learning and eager to contribute to innovative, data-driven solutions that make an impact.
+
+%----------------------------------------------------------------------------------------
+%  EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+\begin{jobshort}{Hyderabad Institute of Engineering and Technology }{ }
+B.Tech in Computer Science (Data Science) | Nov 2022 – May 2026 | Current Aggregate: 70\%
+\end{jobshort}
+
+%----------------------------------------------------------------------------------------
+%  TECHNICAL SKILLS
+%----------------------------------------------------------------------------------------
+\section{Technical Skills}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\multicolumn{2}{@{}X@{}}{Programming Languages: Python, C, Java, HTML, CSS | SQL, Excel, Power BI | Full-Stack Development with AI Tools: GitHub, GitHub Copilot, Replit, Figma, Cursor | IoT Development: Arduino, Sensor Integration, Fundamentals. AI-driven Development, Data Preprocessing, Exploratory Data Analysis | Oracle Cloud Infrastructure (OCI) Foundations}  \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%  SOFT SKILLS
+%----------------------------------------------------------------------------------------
+\section{Soft Skills}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\multicolumn{2}{@{}X@{}}{Effective Communication | Team Collaboration | Time \& Stress Management | Problem Solving \& Decision Making | Quick Learning} \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%  PROJECTS
+%----------------------------------------------------------------------------------------
+\section{Projects}
+\begin{itemize}[leftmargin=1.5em,itemsep=0.9em]
+  \item \textbf{Sales Forecasting Dashboard (ARIMA \& SARIMA/SARIMAX)} – Streamlit, Python, Time Series Analysis, Data Visualization.\\
+  Built an interactive dashboard to forecast sales, visualize historical and future data, evaluate model performance (RMSE, MAPE), and generate downloadable reports.
+
+  \item \textbf{FairHire – Explainable \& Fair NLP Resume Screening System} – Transformers, Python, Streamlit, XAI.\\
+  Developed an AI-powered resume screening platform with fairness-aware ML, counterfactual testing, and SHAP/LIME explainability, providing transparent, unbiased candidate evaluations via an interactive recruiter dashboard.
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%  ACHIEVEMENTS
+%----------------------------------------------------------------------------------------
+\section{Achievements}
+\begin{itemize}[leftmargin=1.5em,itemsep=0.9em]
+  \item \textbf{Hackathon – Awarded 3rd Position | Water Leakage Detection System (1st Year)}\\
+  Developed a real-time water leakage detection system using Arduino, gaining hands-on experience in IoT, embedded systems, and teamwork.
+
+  \item \textbf{Technical Innovation Contest – Awarded 1st Position | Automatic Brake Failure Detection System (2nd Year)}\\
+  Designed a brake failure detection system using Arduino and sensors; recognized for innovation and practical impact.
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%  CERTIFICATIONS
+%----------------------------------------------------------------------------------------
+\section{Certifications}
+\begin{itemize}[leftmargin=1.5em,itemsep=0.9em]
+    \item \textbf{Data Analytics Essentials – Cisco Networking Academy, 2025} \\
+    Skills obtained: Data Cleaning, Exploratory Data Analysis, Data Visualization, Data Storytelling
+
+    \item \textbf{OCI Foundations Associate – Oracle, 2025} \\
+    Skills obtained: Cloud Infrastructure Basics, Core OCI Services, Cloud Security, Compute \& Storage Management
+
+    \item \textbf{Data Analytics \& Design Workshop (42 hours) – The Library} \\
+    Skills obtained: Data Analytics, Color Psychology, Effective Data Communication
+\end{itemize}
+
+\vfill
+\center{\footnotesize Last updated: \today}
+
+\end{document}
